@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivenEats</title>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="central">
+                <h1>DrivenEats</h1>
+                <h3>Sua comida em 6 minutos</h3>
+            </div>
+        </header>
+
+        <main class="main">
+            <h2>Primeiro, seu prato</h2>
+            <nav class="pedidos escolherPrincipal">
+                <button onclick="pratoPrincipal(this)" class="pedido">
+                    <img src="./assets/frango_yin_yang 1.png">
+                    <h4>Frango Yin Yang</h4>
+                    <p class="descricao">Um pouco de batata, um pouco de salada</p>
+                    <p class="preco">R$ 14,90</p>
+                    <ion-icon name="checkmark-circle" class="check invisivel"></ion-icon>
+                </button>
+                <button onclick="pratoPrincipal(this)" class="pedido">
+                    <img src="./assets/carne.jpg">
+                    <h4>Ancho Ao Ponto</h4>
+                    <p class="descricao">Carne suculenta, com alecrim dourado</p>
+                    <p class="preco">R$ 38,50</p>
+                    <ion-icon name="checkmark-circle" class="check invisivel"></ion-icon>
+                </button>
+                <button onclick="pratoPrincipal(this)" class="pedido">
+                    <img src="./assets/risoto.jpg">
+                    <h4>Risoto De Carne</h4>
+                    <p class="descricao">Delícia de risoto, com carne desfiada</p>
+                    <p class="preco">R$ 20,00</p>
+                    <ion-icon name="checkmark-circle" class="check invisivel"></ion-icon>
+                </button>
+            </nav>
+            <h2>Agora, sua bebida</h2>
+            <nav class="pedidos escolherBebida">
+                <button onclick="bebidas('bebidaUm')" class="pedido">
+                    <img src="./assets/coquinha_gelada 1.png">
+                    <h4>Coquinha gelada</h4>
+                    <p class="descricao">Lata 350ml</p>
+                    <p class="preco">R$ 4,90</p>
+                    <ion-icon name="checkmark-circle" class="check invisivel"></ion-icon>
+                </button>
+                <button onclick="bebidas('bebidaDois')" class="pedido">
+                    <img src="./assets/coquinha_gelada 1.png">
+                    <h4>Coca-Zero</h4>
+                    <p class="descricao">Lata 350ml</p>
+                    <p class="preco">R$ 6,00</p>
+                    <ion-icon name="checkmark-circle" class="check invisivel"></ion-icon>
+                </button>
+                <button onclick="bebidas('bebidaTres')" class="pedido">
+                    <img src="./assets/coquinha_gelada 1.png">
+                    <h4>Guaraná</h4>
+                    <p class="descricao">Lata 350ml</p>
+                    <p class="preco">R$ 4,30</p>
+                    <ion-icon name="checkmark-circle" class="check invisivel"></ion-icon>
+                </button>
+            </nav>
+            <h2>Por fim, sua sobremesa</h2>
+            <nav class="pedidos escolherSobremesa">
+                <button onclick="sobremesa('sobremesaUm')" class="pedido">
+                    <img src="./assets/pudim 1.png">
+                    <h4>Pudim</h4>
+                    <p class="descricao">Apenas pudim</p>
+                    <p class="preco">R$ 7,90</p>
+                    <ion-icon name="checkmark-circle" class="check invisivel"></ion-icon>
+                </button>
+                <button onclick="sobremesa('sobremesaDois')" class="pedido">
+                    <img src="./assets/pudim 1.png">
+                    <h4>Pudim de Coco</h4>
+                    <p class="descricao">O melhor pudim</p>
+                    <p class="preco">R$ 10,90</p>
+                    <ion-icon name="checkmark-circle" class="check invisivel"></ion-icon>
+                </button>
+                <button onclick="sobremesa('sobremesaTres')" class="pedido">
+                    <img src="./assets/pudim 1.png">
+                    <h4>Pudim de Laranja</h4>
+                    <p class="descricao">De laranja?</p>
+                    <p class="preco">R$ 9,50</p>
+                    <ion-icon name="checkmark-circle" class="check invisivel"></ion-icon>
+                </button>
+            </nav>
+        </main>
+
+        <footer class="footer">
+            <div class="box">
+                <p>Selecione os 3 itens</p>
+                <p>para fechar o pedido</p>
+            </div>
+            <button onclick="pedidoFinal()" class="box invisivel">
+                <p>Fechar pedido</p>
+            </button>
+        </footer>
+
+
+
+    </div>
+    <script src="main.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

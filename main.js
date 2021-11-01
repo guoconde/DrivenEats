@@ -12,6 +12,8 @@ const listaPedido = {
     endereco: '',
 }
 
+//testando
+
 function valorTotal() {
     const soma = parseFloat((listaPedido.pedidoPreco + listaPedido.bebidaPreco + listaPedido.sobremesaPreco).toFixed(2))
     const somaBRL = soma.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })

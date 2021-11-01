@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DrivenEats</title>
+
+    <meta name="driveneats" content="marketing place driveneats">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="Gustavo Conde" content="DrivenEats">
+
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="reset.css">
@@ -59,21 +64,21 @@
             </nav>
             <h2>Agora, sua bebida</h2>
             <nav class="pedidos escolherBebida">
-                <button onclick="bebidas('bebidaUm')" class="pedido">
+                <button onclick="bebidas(this)" class="pedido">
                     <img src="./assets/coquinha_gelada 1.png">
                     <h4>Coquinha gelada</h4>
                     <p class="descricao">Lata 350ml</p>
                     <p class="preco">R$ 4,90</p>
                     <ion-icon name="checkmark-circle" class="check invisivel"></ion-icon>
                 </button>
-                <button onclick="bebidas('bebidaDois')" class="pedido">
+                <button onclick="bebidas(this)" class="pedido">
                     <img src="./assets/coquinha_gelada 1.png">
                     <h4>Coca-Zero</h4>
                     <p class="descricao">Lata 350ml</p>
                     <p class="preco">R$ 6,00</p>
                     <ion-icon name="checkmark-circle" class="check invisivel"></ion-icon>
                 </button>
-                <button onclick="bebidas('bebidaTres')" class="pedido">
+                <button onclick="bebidas(this)" class="pedido">
                     <img src="./assets/coquinha_gelada 1.png">
                     <h4>Guaraná</h4>
                     <p class="descricao">Lata 350ml</p>
@@ -83,21 +88,21 @@
             </nav>
             <h2>Por fim, sua sobremesa</h2>
             <nav class="pedidos escolherSobremesa">
-                <button onclick="sobremesa('sobremesaUm')" class="pedido">
+                <button onclick="sobremesa(this)" class="pedido">
                     <img src="./assets/pudim 1.png">
                     <h4>Pudim</h4>
                     <p class="descricao">Apenas pudim</p>
                     <p class="preco">R$ 7,90</p>
                     <ion-icon name="checkmark-circle" class="check invisivel"></ion-icon>
                 </button>
-                <button onclick="sobremesa('sobremesaDois')" class="pedido">
+                <button onclick="sobremesa(this)" class="pedido">
                     <img src="./assets/pudim 1.png">
                     <h4>Pudim de Coco</h4>
                     <p class="descricao">O melhor pudim</p>
                     <p class="preco">R$ 10,90</p>
                     <ion-icon name="checkmark-circle" class="check invisivel"></ion-icon>
                 </button>
-                <button onclick="sobremesa('sobremesaTres')" class="pedido">
+                <button onclick="sobremesa(this)" class="pedido">
                     <img src="./assets/pudim 1.png">
                     <h4>Pudim de Laranja</h4>
                     <p class="descricao">De laranja?</p>
@@ -117,6 +122,53 @@
             </button>
         </footer>
 
+        <section class="invisivel">
+            <div class="dadosEntrega">
+                <div class="dados">
+                    <h1>Qual o seu nome?</h1>
+                    <input type="text" class="pegarNome">
+                    <h2 class="nome"> </h2>
+                    <h1>Qual o seu endereço?</h1>
+                    <input type="text" class="pegarEndereco">
+                    <h2 class="endereco"></h2>
+                </div>
+                <button onclick="pegarDados()">Confirmar</button>
+                <button onclick="cancelar()">Cancelar</button>
+            </div>
+            <div class="invisivel confirmar">
+                <h1>Confirme seu pedido</h1>
+                <div class="pratoEscolhido">
+                    <p class="nomePrato"></p>
+                    <p class="precoPrato"></p>
+                </div>
+                <div class="bebidaEscolhida">
+                    <p class="nomeBebida"></p>
+                    <p class="precoBebida"></p>
+                </div>
+                <div class="sobremesaEscolhida">
+                    <p class="nomeSobremesa"></p>
+                    <p class="precoSobremesa"></p>
+                </div>
+                <div class="total">
+                    <p class="totalSoma">Total</p>
+                    <p class="totalValor"></p>
+                </div>
+                <h1>Entregar para:</h1>
+                <div class="nomeDiv">
+                    <p class="nome"></p>
+                </div>
+                <div class="enderecoDiv">
+                    <p class="endereco"></p>
+                </div>
+                <button onclick="finalizar()">Tudo certo, pode pedir!</button>
+                <button onclick="cancelar()">Cancelar</button>
+            </div>
+        </section>
+        <div class="invisivel preparando" onclick="window.location.reload()">
+            <h1>SEU PEDIDO ESTA SENDO PREPARADO E JÁJÁ SAIRÁ PARA ENTREGA!</h1>
+            <ion-icon name="bicycle-outline"></ion-icon>
+            <h1>CLICK EM QUALQUER LUGAR PARA RECOMEÇAR</h1>
+        </div>
 
 
     </div>

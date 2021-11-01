@@ -11,13 +11,13 @@ body {
 }
 
 .container {
-    width: 414px;
+    width: 100%;
     
     background-color: #E5E5E5;
 }
 
 .central {
-    width: 414px;
+    width: 100%;
     height: 92px;
 
     background-color: #CF2B2B;
@@ -49,6 +49,7 @@ header div h3 {
 main {
     margin-top: 123px;
     margin-bottom: 108px;
+
 }
 
 main h2 {
@@ -101,7 +102,7 @@ main h2 {
     z-index: 0;
 }
 
-.principal {
+.principal, .bebida, .sobremesa {
     border: 5px solid #32b72f;
 }
 
@@ -112,10 +113,6 @@ main h2 {
     position: absolute;
     bottom: 8px;
     right: 8px;
-}
-
-.invisivel {
-    display: none;
 }
 
 .pedido img {
@@ -156,7 +153,7 @@ main h2 {
 }
 
 footer {
-    width: 414px;
+    width: 100%;
     height: 92px;
     background-color: #FFF;
 
@@ -170,7 +167,7 @@ footer {
 
 footer div,
 footer button {
-    width: 364px;
+    width: 90%;
     height: 61px;
     
     border-radius: 50px;
@@ -209,3 +206,175 @@ footer div p {
     color: #FFF;
 }
 
+section {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+
+    top: 0;
+
+    z-index: 3;
+}
+
+.dadosEntrega {
+    width: 90%;
+    border-radius: 9px;
+
+    background-color: #CF2B2B;
+
+    padding: 21px 26px 0 26px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.dadosEntrega .dados {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+
+    color: #FFF;
+}
+
+.dadosEntrega button {
+    width: 100%;
+    height: 52px;
+    border-radius: 100px;
+
+    margin: 0 auto;
+
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+
+    color: #CF2B2B;
+}
+
+.dadosEntrega button:nth-child(3) {
+    background-color: #CF2B2B;
+    color: #FFF;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.dadosEntrega input {
+    border: none;
+    height: 40px;
+
+    font-size: 22px;
+}
+
+.confirmar {
+    width: 90%;
+    border-radius: 9px;
+
+    background-color: #50D074;
+
+    padding: 21px 26px 0 26px;
+
+    display: flex;
+    flex-direction: column;
+    
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    
+    color: #FFF;
+}
+
+.confirmar div {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px 0;
+
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.confirmar h1 {
+    margin: 10px auto 20px auto;
+}
+
+.confirmar .total {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.confirmar button {
+    width: 100%;
+    height: 52px;
+    border-radius: 100px;
+
+    margin-top: 15px;
+
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+
+    color: #50D074;
+}
+
+.confirmar button:last-child {
+    color: #FFF;
+    background-color: #50D074;
+    
+    margin-top: 0;
+}
+
+.preparando {
+    width: 100%;
+    height: 100%;
+
+    padding: 20px;
+
+    background-color: #CF2B2B;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 5;
+
+    font-family: 'Righteous';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    color: white;
+}
+
+.preparando ion-icon {
+    font-size: 300px;
+}
+
+.invisivel {
+    display: none;
+}
